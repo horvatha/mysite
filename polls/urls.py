@@ -2,7 +2,8 @@ from django.conf.urls import url
 from polls import views
 
 urlpatterns = [
-    url(r'^[A-Z]{3}-[0-9]{3}$', views.rendszam, name="rendszam")
+    url(r'^[A-Z]{3}-[0-9]{3}$', views.rendszam, name="rendszam"),
+    url(r'^$', views.index, name="rendszam"),
 ]
 
 
